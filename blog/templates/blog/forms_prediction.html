@@ -1,0 +1,47 @@
+{% extends 'blog/base3.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<html>
+
+<img class="mb-4" src="{% static "images/startbusiness.png" %}">
+<head>
+    <title>{{title}}</title>
+</head>
+<h2>Quer prever seu faturamento do próximo mês considerando a dinâmica atual dos juros, inflação e dólar?</h2>
+<br>
+<h3>Simples, agora mesmo, preencha o formulário abaixo e receba o <strong>resultado estatístico</strong> <br>
+  para trabalhar melhor a sua <strong>meta!</strong></h3>
+
+
+
+  <body>
+  <p> {{ user.username }}</p>
+    <h1>{{header}}</h1>
+
+
+    {% if form.errors %}
+        <p style="color: red;">
+            Please correct the error{{ form.errors|pluralize }} below.
+        </p>
+    {% endif %}
+
+    <form action="" enctype="multipart/form-data"  method="post">
+        <table>
+            {{ form.as_table }}
+        </table>
+        {% csrf_token %}
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <h4>É <strong>gratuito</strong> para a sua primeira análise superficial. Seja <strong>cliente</strong> e receba até a <strong>comparação</strong><br>
+       com seus <strong>concorrentes!</strong></h4>
+</body>
+</html>
+
+
+{% endblock %}

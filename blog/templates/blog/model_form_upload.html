@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+{% load staticfiles %}
+<img src="{% static "images/forecast.jpg" %}" alt="My image"/>
+<br>
+<br>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Upload</button>
+
+
+  <!-- <script>
+    window.setTimeout(function(){
+      window.location.href = "{% url 'post_list' %}"
+    }, 12000);
+  </script>
+<!-- comment -->
+</form>
+
+
+
+
+{% endblock %}

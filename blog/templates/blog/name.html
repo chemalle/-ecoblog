@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<html>
+<h1>Tendência Preditiva</h1>
+
+<p>{{ talk }}</p>
+
+{% load staticfiles %}
+<head>
+<img class="app-graph"  src="http://clickwings.econobilidade.com/static/images/new-york-1819861_960_720.jpg">
+  <br>
+  <td class=xl77 style='border-top:none'>   {{data_barchart | safe}} </td>
+  <td class=xl78 style='border-top:none'>{{F}}</td>
+
+  <td class=xl78 style='border-top:none'>{{df}}</td>
+  <td class=xl78 style='border-top:none'>{{df2}}</td>
+  <br>
+  <br>
+  <br>
+  <td class=xl78 style='border-top:none'>{{df3}}</td>
+
+
+  <br>
+  <td class=xl78 style='border-top:none'>{{df4}}</td>
+
+
+<p>Podemos realizar uma recomendaçao PRECISA caso tenhamos maiores informacoes do seu perfil, para isto se torne cliente da unica contabilidade por algoritmos do Brasil!</p>
+<p>Esta sugestao tem 87% de assertividade!</p>
+<br>
+<a href="https://youtu.be/Q0brUMWilXk">Conheça a empresa dona da tecnologia #econobilidade</a>
+
+</head>
+<body>
+
+  {% endblock %}

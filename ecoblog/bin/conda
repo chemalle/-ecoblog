@@ -1,6 +1,1 @@
-#!/Users/eduardoalbertochemalle/Dropbox/neXThinker/eco/Python_Codes/Classes/anaconda/bin/python
-if __name__ == '__main__':
-    import sys
-    import conda.cli
-
-    sys.exit(conda.cli.main())
+/Users/eduardochemalle/anaconda3/bin/conda

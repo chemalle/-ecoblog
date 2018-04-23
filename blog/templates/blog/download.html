@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Download Glyph</h2>
+      <p>Download icon: <span class="glyphicon glyphicon-download"></span></p>
+      <p>Download icon as a link:
+        <a <a href="{% url 'ECD' %}">#econobilidade</a>
+          <span class="glyphicon glyphicon-download"></span>
+        </a>
+      </p>
+      <p>Download icon on a button:
+        <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-download"></span> Download
+        </button>
+      </p>
+      <p>Download icon on a styled link button:
+        <a href="{% url 'CSV' %}" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-download"></span> Baixe seu Modelo
+        </a>
+      </p>
+      <p>Unicode:
+        <span class="glyphicon">&#xe026;</span>
+      </p>
+    </div>
+  </body>
+</html>
